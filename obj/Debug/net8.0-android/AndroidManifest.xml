@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    Una herramienta generó este código.
+    Se generó desde C:\Users\byrom\androidx.health-connect-demo-.net-maui-main\Health\Platforms\Android\AndroidManifest.xml
+    Los cambios realizados en este archivo pueden generar un comportamiento incorrecto y se perderán si
+    se regenera el contenido.
+    -->
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" xmlns:tools="http://schemas.android.com/tools" android:versionCode="1" package="com.companyname.health" android:versionName="1.0">
+  <uses-sdk android:minSdkVersion="21" android:targetSdkVersion="34" tools:overrideLibrary="androidx.health.connect.client,androidx.health.services.client" />
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="android.permission.health.READ_ACTIVE_CALORIES_BURNED" />
+  <uses-permission android:name="android.permission.health.READ_BASAL_BODY_TEMPERATURE" />
+  <uses-permission android:name="android.permission.health.READ_BASAL_METABOLIC_RATE" />
+  <uses-permission android:name="android.permission.health.READ_BLOOD_GLUCOSE" />
+  <uses-permission android:name="android.permission.health.READ_BLOOD_PRESSURE" />
+  <uses-permission android:name="android.permission.health.READ_BODY_FAT" />
+  <uses-permission android:name="android.permission.health.READ_BODY_TEMPERATURE" />
+  <uses-permission android:name="android.permission.health.READ_BODY_WATER_MASS" />
+  <uses-permission android:name="android.permission.health.READ_BONE_MASS" />
+  <uses-permission android:name="android.permission.health.READ_CERVICAL_MUCUS" />
+  <uses-permission android:name="android.permission.health.READ_EXERCISE" />
+  <uses-permission android:name="android.permission.health.READ_DISTANCE" />
+  <uses-permission android:name="android.permission.health.READ_ELEVATION_GAINED" />
+  <uses-permission android:name="android.permission.health.READ_FLOORS_CLIMBED" />
+  <uses-permission android:name="android.permission.health.READ_HEART_RATE" />
+  <uses-permission android:name="android.permission.health.READ_HEART_RATE_VARIABILITY" />
+  <uses-permission android:name="android.permission.health.READ_HEIGHT" />
+  <uses-permission android:name="android.permission.health.READ_HYDRATION" />
+  <uses-permission android:name="android.permission.health.READ_INTERMENSTRUAL_BLEEDING" />
+  <uses-permission android:name="android.permission.health.READ_LEAN_BODY_MASS" />
+  <uses-permission android:name="android.permission.health.READ_MENSTRUATION" />
+  <uses-permission android:name="android.permission.health.READ_NUTRITION" />
+  <uses-permission android:name="android.permission.health.READ_OVULATION_TEST" />
+  <uses-permission android:name="android.permission.health.READ_OXYGEN_SATURATION" />
+  <uses-permission android:name="android.permission.health.READ_POWER" />
+  <uses-permission android:name="android.permission.health.READ_RESPIRATORY_RATE" />
+  <uses-permission android:name="android.permission.health.READ_RESTING_HEART_RATE" />
+  <uses-permission android:name="android.permission.health.READ_SEXUAL_ACTIVITY" />
+  <uses-permission android:name="android.permission.health.READ_SLEEP" />
+  <uses-permission android:name="android.permission.health.READ_SPEED" />
+  <uses-permission android:name="android.permission.health.READ_STEPS" />
+  <uses-permission android:name="android.permission.health.READ_TOTAL_CALORIES_BURNED" />
+  <uses-permission android:name="android.permission.health.READ_VO2_MAX" />
+  <uses-permission android:name="android.permission.health.READ_WEIGHT" />
+  <uses-permission android:name="android.permission.health.READ_WHEELCHAIR_PUSHES" />
+  <application android:allowBackup="true" android:icon="@mipmap/appicon" android:supportsRtl="true" android:name="crc64221c4accc0028192.MainApplication" android:label="Health" android:debuggable="true" android:extractNativeLibs="true">
+    <activity android:configChanges="density|orientation|smallestScreenSize|screenLayout|screenSize|uiMode" android:launchMode="singleTop" android:theme="@style/Maui.SplashTheme" android:name="crc64221c4accc0028192.MainActivity" android:exported="true">
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE" />
+      </intent-filter>
+      <intent-filter>
+        <action android:name="android.intent.action.VIEW_PERMISSION_USAGE" />
+        <category android:name="android.intent.category.HEALTH_PERMISSIONS" />
+      </intent-filter>
+    </activity>
+    <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="crc6468b6408a11370c2f.WebAuthenticatorIntermediateActivity" />
+    <provider android:authorities="com.companyname.health.fileProvider" android:exported="false" android:grantUriPermissions="true" android:name="microsoft.maui.essentials.fileProvider">
+      <meta-data android:name="android.support.FILE_PROVIDER_PATHS" android:resource="@xml/microsoft_maui_essentials_fileprovider_file_paths" />
+    </provider>
+    <receiver android:enabled="true" android:exported="false" android:label="Essentials Connectivity Broadcast Receiver" android:name="crc64e53d2f592022988e.ConnectivityBroadcastReceiver" />
+    <activity android:configChanges="orientation|screenSize" android:exported="false" android:name="crc64ba438d8f48cf7e75.IntermediateActivity" />
+    <receiver android:enabled="true" android:exported="false" android:label="Essentials Battery Broadcast Receiver" android:name="crc640a8d9a12ddbf2cf2.BatteryBroadcastReceiver" />
+    <receiver android:enabled="true" android:exported="false" android:label="Essentials Energy Saver Broadcast Receiver" android:name="crc640a8d9a12ddbf2cf2.EnergySaverBroadcastReceiver" />
+    <service android:name="crc64396a3fe5f8138e3f.KeepAliveService" />
+    <provider android:name="mono.MonoRuntimeProvider" android:exported="false" android:initOrder="1999999999" android:authorities="com.companyname.health.mono.MonoRuntimeProvider.__mono_init__" />
+  </application>
+  <!-- Health Connect Permissions https://developer.android.com/health-and-fitness/guides/health-connect/plan/data-types -->
+  <queries>
+    <package android:name="com.google.android.apps.healthdata" />
+    <intent>
+      <action android:name="androidx.health.ACTION_SHOW_PERMISSIONS_RATIONALE" />
+    </intent>
+  </queries>
+</manifest>

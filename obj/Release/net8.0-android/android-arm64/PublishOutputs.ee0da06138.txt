@@ -1,0 +1,4 @@
+C:\Users\byrom\androidx.health-connect-demo-.net-maui-main\Health\bin\Release\net8.0-android\android-arm64\publish\com.companyname.health-Signed.aab
+C:\Users\byrom\androidx.health-connect-demo-.net-maui-main\Health\bin\Release\net8.0-android\android-arm64\publish\com.companyname.health.aab
+C:\Users\byrom\androidx.health-connect-demo-.net-maui-main\Health\bin\Release\net8.0-android\android-arm64\publish\com.companyname.health-Signed.apk
+C:\Users\byrom\androidx.health-connect-demo-.net-maui-main\Health\bin\Release\net8.0-android\android-arm64\publish\_Microsoft.Android.Resource.Designer.dll
